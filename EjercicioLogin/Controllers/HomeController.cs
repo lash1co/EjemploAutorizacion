@@ -18,14 +18,14 @@ namespace EjercicioLogin.Controllers
         [AuthorizeUser(oRol:"Administrador")]
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your application description page. Vista si eres un administrador";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Your contact page. Vista si eres un usuario registrado";
 
             return View();
         }
